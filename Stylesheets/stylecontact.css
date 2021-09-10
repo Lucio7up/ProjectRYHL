@@ -1,0 +1,1165 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-weight: 400;
+  background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.logo, .nav ul li a{
+
+  transition: all 300ms;
+
+  -webkit-transition: all 300ms;
+
+  -moz-transition: all 300ms;
+
+  -o-transition: all 300ms;
+
+}
+
+nav {
+  padding: 15px;
+}
+
+.logo {
+  float: left;
+  padding: 8px;
+  margin-left: 75px;
+  margin-top: 18px;
+  opacity: 0.8;
+  width: 300px;
+  height: 70px;
+}
+
+.logo:hover{
+  opacity: 0.4;
+}
+
+.logo a {
+  color:#6F6565;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-family: Montserrat;
+  opacity: 0.8;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 68px;
+}
+
+nav ul li:last-child {
+  margin-right: 34px;
+}
+
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color:#6F6565;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  font-family: Montserrat;
+  margin-top: 42px;
+}
+
+nav ul li a:hover{
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 864px) {
+  .logo {
+        padding: 0;
+        position: fixed;
+  }
+
+  .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+  }
+
+  .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+  }
+
+  .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+  }
+
+  .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+  }
+
+  .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+  }
+
+  .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+  }
+
+  .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+  }
+
+  .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+  }
+
+  .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color:#6F6565;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+  }
+
+  .nav-btn {
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+  }
+
+  .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background:#6F6565;
+        border-radius: 2px;
+        margin-left: 14px;
+  }
+
+  .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+  }
+
+  .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+  }
+
+  .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+  }
+}
+
+#nav:checked + .nav-btn {
+  transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i {
+  background:#6F6565;
+  transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+  opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+  z-index: 9990;
+  opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*Contact*/
+
+.test1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  left: -170px;
+  top: 30px;
+}
+
+.test1::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+
+}
+
+section .container44{
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+  
+}
+
+.test1 .container44 .contactinfo{
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background:rgb(190, 190, 190);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.test1 .container44 .contactinfo h2{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.test1 .container44 .contactinfo .info{
+position: relative;
+margin: 20px 0;
+}
+
+.test1 .container44 .contactinfo .info li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 40px 0;
+  cursor: pointer;
+  align-items: flex-start;
+  top: 10px;
+  }
+
+  .test1 .container44 .contactinfo .info li span:nth-child(1){
+  width: 30px;
+  min-width: 30px;
+}
+
+.test1 .container44 .contactinfo .info li span:nth-child(1) img{
+max-width: 100%;
+filter: invert(1);
+opacity: 0.5;
+}
+
+.test1 .container44 .contactinfo .info li span:nth-child(2){
+color: #fff;
+margin-left: 10px;
+font-weight: 300;
+opacity: 0.5;
+}
+
+.test1 .container44 .contactinfo .info li span:nth-child(2){
+max-width: 100%;
+filter: invert(1);
+opacity: 0.5;
+}
+
+.test1 .container44 .contactinfo .info li:hover span:nth-child(1) img,
+.test1 .container44 .contactinfo .info li:hover span:nth-child(2){
+
+opacity: 1;
+}
+
+.test1 .container44 .contactinfo .sci{
+  position: relative;
+  display: flex;
+  top: 50px;
+}
+
+.test1 .container44 .contactinfo .sci li{
+list-style: none;
+margin-right:15px;
+}
+
+.test1 .container44 .contactinfo .sci li a{
+text-decoration: none;
+}
+
+.test1 .container44 .contactinfo .sci li a img{
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+.test1 .container44 .contactinfo .sci li:hover a img{
+  opacity: 1;
+}
+
+.test1 .container44 .contactform{
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: 1500px;
+  height: 100%;
+  box-shadow: 0 50px 50px rgba(134, 134, 134, 0.2);
+}
+
+.test1 .container44 .contactform h2{
+color: rgb(139, 139, 139);
+font-size: 24px;
+font-weight: 500;
+}
+
+.test1 .container44 .contactform .formbox{
+position: relative;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-top: 30px;
+}
+
+.test1 .container44 .contactform .formbox .inputBox{
+position: relative;
+margin: 0 0 35px 0;
+}
+
+.test1 .container44 .contactform .formbox .inputBox.w50{
+width: 47%;
+}
+
+.test1 .container44 .contactform .formbox .inputBox.w100{
+width: 100%;
+}
+.test1 .container44 .contactform .formbox .inputBox textarea,
+.test1 .container44 .contactform .formbox .inputBox input{
+  width: 100%;
+  padding: 5px 0;
+  resize: none;
+  font-size: 18px;
+  font-weight: 300;
+  color:rgb(139, 139, 139);
+  border: none;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  outline: none;
+}
+
+.test1 .container44 .contactform .formbox .inputBox textarea{
+min-height: 120px;
+}
+
+.test1 .container44 .contactform .formbox .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(139, 139, 139);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.test1 .container44 .contactform .formbox .inputBox textarea:focus ~ span,
+.test1 .container44 .contactform .formbox .inputBox input:focus ~ span,
+.test1 .container44 .contactform .formbox .inputBox textarea:valid ~ span,
+.test1 .container44 .contactform .formbox .inputBox input:valid ~ span{
+transform: translateY(-20px);
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 1px;
+color: #80808059;
+}
+
+
+
+button {
+  background: none;
+  color: rgb(216, 215, 215);
+  width: 160px;
+  height: 40px;
+  border: 1px solid #a3a3a3;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+  color: #9c9c9c94;
+  top: 400px;
+ }
+ 
+ button:focus {
+  outline: none;
+ }
+ 
+ 
+ button:after {
+     content: '';
+     display: block;
+     position: absolute;
+     background: rgba(255, 255, 255, 0.562);
+     width: 30px;
+     height: 100%;
+     left: 30px;
+     top: 0;
+     opacity: 0;
+     filter: blur(30px);
+     transform: translateX(-100px) scaleX(-15deg);
+ }
+ 
+ button:hover {
+    background: #dbd9d9;
+    cursor: pointer;
+ }
+ 
+ button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+ }
+
+/*Footer*/
+
+#footer{
+  position: absolute;
+  top: 1150px;
+  }
+  
+  .footerlogo1{
+  
+    width: 2540px;
+    height: 0px;
+    top: 100px;
+    
+    border: 1px solid rgba(111, 101, 101, 0.2);
+    transform: rotate(-0.08deg); 
+  }
+  
+  .footerlogo2{
+    position: absolute;
+    width: 335px;
+    height: 29px;
+    top: 70px;
+    left: 44%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    
+    color: #6F6565;
+  
+  }
+  
+  .footerlogo3{
+    position: absolute;
+  width: 850px;
+  height: 18px;
+  top: 110px;
+  left: 35%;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  
+  color: #6F6565;
+  }
+  
+  .footerlogo4{
+    position: absolute;
+    width: 2540px;
+    height: 0px;
+    left: 0px;
+    top: 270px;
+    
+    border: 1px solid rgba(111, 101, 101, 0.2);
+    transform: rotate(-0.08deg);
+  }
+  
+  .footerlogo5{
+    position: absolute;
+    width: 207px;
+    height: 20px;
+    left: 600px;
+    top: 350px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+    
+  }
+  
+  .footerlogo6{
+    position: absolute;
+    width: 167px;
+    height: 22px;
+    left: 600px;
+    top: 380.71px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo7{
+    position: absolute;
+    width: 210px;
+    height: 22px;
+    left: 600px;
+    top: 413.71px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo8{
+    position: absolute;
+  width: 132px;
+  height: 20px;
+  left: 881px;
+  top: 350px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #000000;
+  
+  }
+  
+  .footerlogo9{
+    position: absolute;
+  width: 42px;
+  height: 22px;
+  left: 881px;
+  top: 381px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  }
+  
+  .footerlogo10{
+    position: absolute;
+    width: 167px;
+    height: 22px;
+    left: 881px;
+    top: 414px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo11{
+    position: absolute;
+  width: 167px;
+  height: 22px;
+  left: 881px;
+  top: 447px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  }
+  
+  .footerlogo12{
+    position: absolute;
+    width: 167px;
+    height: 22px;
+    left: 881px;
+    top: 480px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo13{
+    position: absolute;
+    width: 167px;
+    height: 22px;
+    left: 881px;
+    top: 513px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo14{
+    position: absolute;
+    width: 167px;
+    height: 22px;
+    left: 881px;
+    top: 546px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo15{
+    position: absolute;
+    width: 157px;
+    height: 20px;
+    left: 1092px;
+    top: 350px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+    
+  }
+  
+  .footerlogo16{
+    position: absolute;
+    width: 216px;
+    height: 22px;
+    left: 1092px;
+    top: 381px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo17{
+    position: absolute;
+    width: 157px;
+    height: 22px;
+    left: 1092px;
+    top: 414px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+  }
+  
+  .footerlogo18{
+    position: absolute;
+  width: 157px;
+  height: 22px;
+  left: 1092px;
+  top: 447px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  
+  }
+  
+  .footerlogo19{
+    position: absolute;
+  width: 157px;
+  height: 22px;
+  left: 1092px;
+  top: 480px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  }
+  
+  .footerlogo20{
+    position: absolute;
+  width: 247px;
+  height: 24px;
+  left: 1328px;
+  top: 350px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #000000;
+  }
+  
+  .footerlogo21{
+    position: absolute;
+    width: 103px;
+    height: 22px;
+    left: 1328px;
+    top: 381px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #6F6565;
+    
+  }
+  
+  .footerlogo22{
+    position: absolute;
+  width: 115px;
+  height: 22px;
+  left: 1328px;
+  top: 414px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  }
+  
+  .footerlogo23{
+    position: absolute;
+  width: 122px;
+  height: 22px;
+  left: 1328px;
+  top: 447px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+  
+  }
+  
+  .footerlogo24{
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 1638px;
+    top: 335px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    
+    color: #000000;
+  
+  }
+  
+  
+  .footerlogo25{
+    position: absolute;
+    width: 103px;
+    height: 14px;
+    left: 1638px;
+    top: 374px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+    
+    
+    color: #6F6565;
+  
+  }
+  
+  .footerlogo26{
+    position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 1720px;
+  top: 403px;
+  
+  background: url(../Bilder/facebook-footer-icon.png);
+  
+  }
+  
+  .footerlogo27{
+    position: absolute;
+    width: 84px;
+    height: 38px;
+    left: 1608px;
+    top: 403px;
+    
+    background: url(../Bilder/youtube-footer-icon.png);
+    
+    
+    color: #6F6565;
+  
+  }
+  
+  .footerlogo28{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 1798px;
+    top: 403px;
+    
+    background: url(../Bilder/instagram-footer-icon.png);
+  
+  }
+  
+  .footerlogo29{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 1868px;
+    top: 403px;
+    
+    background: url(../Bilder/pinterest-footer-icon.png);
+  
+  }
+  
+  
+  #footer2{
+    position: relative;
+    top: 391px;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 120px;
+    }
+  
+  .footerone1{
+  position: absolute;
+  width: 200px;
+  height: 22px;
+  left: 45%;
+  top: 19px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #6F6565;
+    }
+  
+    .footerone2{
+      position: absolute;
+      width: 910px;
+      height: 17px;
+      left: 32%;
+      top: 80px;
+      
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 13px;
+      
+      color: #6F6565;
+        }
+  
+  .footerone3{
+  position: absolute;
+  width: 319px;
+  height: 18px;
+  left: 43%;
+  top: 100px;
+          
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+          
+  color: #6F6565;
+   }
+  
+  .footerone4{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1100px;
+  top: 40px;
+            
+  background: url(../Bilder/master.png);
+            
+  }
+  
+  .footerone5{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1160px;
+    top: 40px;
+              
+    background: url(../Bilder/visa.png);
+              
+    }
+  
+    .footerone6{
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 1220px;
+      top: 40px;
+                
+      background: url(../Bilder/american-express.png);
+                
+      }
+  
+  .footerone7{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1280px;
+  top: 40px;
+                  
+  background: url(../Bilder/paypal.png);
+                  
+  }
+  
+  .footerone8{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1340px;
+    top: 40px;
+                    
+    background: url(../Bilder/maestro.png);
+                    
+    }
+
+
+
+ /*Subscribe*/
+
+ .wrapper12{
+	width: 600px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  position: absolute;
+  letter-spacing: 2px;
+  left: 39%;
+  top: 170px;
+  font-family: Montserrat;
+}
+
+.wrapper12 h1{
+	margin-bottom: 40px;
+	font-size: 42px;
+  opacity: 0.8;
+  color:#6F6565;  
+}
+
+.wrapper12 p{
+	margin-bottom: 40px;
+	opacity: 0.8;
+  color:#6F6565; 
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.newsletter{
+	max-width: 550px;
+	width: 100%;
+  position: relative;
+  font-family: Montserrat;
+}
+
+.newsletter .input{
+	width: 100%;
+	padding: 30px 100px 30px 60px;
+	border-radius: 5px;
+	border: none;
+  font-weight: bold;
+  background-color:#6f65650a; 
+  font-family: Montserrat;
+}
+
+.newsletter .fas{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	left: 20px;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+.newsletter .btn3{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+  background-color:#6f656560 ; 
+	padding: 15px 20px;
+	border-radius: 25px;
+	font-size: 12px;
+	letter-spacing: 5px;
+	color:#6F6565; 
+	cursor: pointer;
+  text-transform: uppercase;
+  font-family: Montserrat;
+}  
+
+  
+
+/*Contact Text*/
+
+h1{
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-family: Montserrat;
+  opacity: 0.8;
+  color:#6F6565;
+
+
+}
+
+ p{
+  position: absolute;
+  color:#6F6565;
+  top: 15%;
+  text-align: center;
+  left: 33%;
+  font-size: 16px;
+  font-family: Montserrat;
+  opacity: 0.8;
+}
+
+  
+
+
+  
+
+
+
+
+
+
+
+

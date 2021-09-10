@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color:#C0C0C0;  
+}
+
+/*intro für slider*/
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider{
+    background-color:#000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0.6;
+
+}
+
+.intro-text{
+    color:white;
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.hide{
+    background: rgba(0, 0, 0, 0.575);
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/*navbarleft*/
